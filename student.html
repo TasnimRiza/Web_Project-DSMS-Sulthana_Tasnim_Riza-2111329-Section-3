@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard | Digital Schooling System</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="dashboard" data-role="student">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">DS</div>
+          <div>
+            <h1>Student Profile</h1>
+            <p>Attendance, class, assignment, exam, result</p>
+          </div>
+        </div>
+        <nav class="role-nav" id="roleNav" aria-label="Student sections"></nav>
+        <div class="data-panel">
+          <button id="logoutBtn" class="ghost-btn danger" type="button">Logout</button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="roleEyebrow">Student</p>
+            <h2 id="dashboardTitle">Student Dashboard</h2>
+          </div>
+          <div class="session-card" id="sessionCard">Loading profile</div>
+        </header>
+
+        <section class="hero-band">
+          <div>
+            <p class="eyebrow">Student Work</p>
+            <h3 id="heroTitle">Student dashboard</h3>
+            <p id="heroCopy">Take attendance and view class work.</p>
+          </div>
+          <div class="hero-stats" id="heroStats"></div>
+        </section>
+
+        <section class="notice" id="notice" hidden></section>
+        <section class="dashboard-grid" id="dashboard"></section>
+      </main>
+    </div>
+
+    <template id="cardTemplate">
+      <article class="panel-card">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow card-kicker"></p>
+            <h3 class="card-title"></h3>
+          </div>
+        </div>
+        <div class="card-body"></div>
+      </article>
+    </template>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+{
+  "school": {
+    "name": "Shobdo & Letters Government Primary School",
+    "upazila": "Madhabpur",
+    "session": "2026"
+  },
+  "schools": [
+    {
+      "id": "school-primary",
+      "name": "Shobdo & Letters Government Primary School",
+      "upazila": "Madhabpur",
+      "session": "2026",
+      "headteacherId": "head-fahim"
+    }
+  ],
+  "users": [
+    {
+      "id": "stu-ramiza",
+      "name": "Ramiza Akter",
+      "role": "student",
+      "schoolId": "school-primary",
+      "className": "Class 5",
+      "roll": "05"
+    },
+    {
+      "id": "stu-sakib",
+      "name": "Sakib Hasan",
+      "role": "student",
+      "schoolId": "school-primary",
+      "className": "Class 5",
+      "roll": "08"
+    },
+    {
+      "id": "tea-riza",
+      "name": "Riza Akter",
+      "role": "teacher",
+      "schoolId": "school-primary",
+      "subject": "Bangla",
+      "className": "Class 5"
+    },
+    {
+      "id": "tea-nadia",
+      "name": "Nadia Islam",
+      "role": "teacher",
+      "schoolId": "school-primary",
+      "subject": "Mathematics",
+      "className": "Class 4"
+    },
+    {
+      "id": "head-fahim",
+      "name": "Fahim Uddin",
+      "role": "headteacher",
+      "schoolId": "school-primary"
+    },
+    {
+      "id": "upo-admin",
+      "name": "UPO Admin",
+      "role": "upo"
+    }
+  ],
+  "classrooms": [
+    {
+      "id": "room-101",
+      "name": "Room 101",
+      "className": "Class 5",
+      "capacity": 40
+    },
+    {
+      "id": "room-102",
+      "name": "Room 102",
+      "className": "Class 4",
+      "capacity": 35
+    }
+  ],
+  "schedules": [
+    {
+      "id": "sch-1",
+      "teacherId": "tea-riza",
+      "className": "Class 5",
+      "subject": "Bangla",
+      "day": "Sunday",
+      "time": "09:00 - 09:45",
+      "room": "Room 101"
+    },
+    {
+      "id": "sch-2",
+      "teacherId": "tea-riza",
+      "className": "Class 5",
+      "subject": "Bangla Grammar",
+      "day": "Tuesday",
+      "time": "11:00 - 11:45",
+      "room": "Room 101"
+    },
+    {
+      "id": "sch-3",
+      "teacherId": "tea-nadia",
+      "className": "Class 4",
+      "subject": "Mathematics",
+      "day": "Monday",
+      "time": "10:00 - 10:45",
+      "room": "Room 102"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "asg-1",
+      "teacherId": "tea-riza",
+      "className": "Class 5",
+      "title": "Bangla letter practice",
+      "instructions": "Write five formal letters by following instructions.",
+      "dueDate": "2026-04-30"
+    }
+  ],
+  "assignmentMaterials": [],
+  "exams": [
+    {
+      "id": "exam-1",
+      "teacherId": "tea-riza",
+      "className": "Class 5",
+      "subject": "Bangla",
+      "description": "Formal letter writing and Bangla grammar practice.",
+      "date": "2026-05-05",
+      "time": "10:00 AM",
+      "status": "Pending approval",
+      "questions": "",
+      "questionsPublished": false,
+      "started": false
+    },
+    {
+      "id": "exam-2",
+      "teacherId": "tea-nadia",
+      "className": "Class 4",
+      "subject": "Mathematics",
+      "description": "Basic arithmetic and problem solving.",
+      "date": "2026-05-07",
+      "time": "11:00 AM",
+      "status": "Approved",
+      "questions": "",
+      "questionsPublished": false,
+      "started": false
+    }
+  ],
+  "examSubmissions": [],
+  "results": [
+    {
+      "studentId": "stu-ramiza",
+      "subject": "Bangla",
+      "marks": 87,
+      "grade": "A"
+    },
+    {
+      "studentId": "stu-ramiza",
+      "subject": "Mathematics",
+      "marks": 79,
+      "grade": "B"
+    },
+    {
+      "studentId": "stu-sakib",
+      "subject": "Bangla",
+      "marks": 82,
+      "grade": "A-"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "att-1",
+      "userId": "stu-ramiza",
+      "role": "student",
+      "date": "2026-04-26",
+      "status": "Present",
+      "takenBy": "self"
+    },
+    {
+      "id": "att-2",
+      "userId": "tea-riza",
+      "role": "teacher",
+      "date": "2026-04-26",
+      "status": "Present",
+      "takenBy": "self"
+    },
+    {
+      "id": "att-3",
+      "userId": "head-fahim",
+      "role": "headteacher",
+      "date": "2026-04-26",
+      "status": "Present",
+      "takenBy": "upo-admin"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1",
+      "title": "Class 5 final exam routine",
+      "type": "Exam",
+      "requestedBy": "tea-riza",
+      "status": "Pending"
+    },
+    {
+      "id": "act-2",
+      "title": "Annual sports day",
+      "type": "School Event",
+      "requestedBy": "head-fahim",
+      "status": "Approved"
+    }
+  ]
+}

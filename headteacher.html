@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Headteacher Dashboard | Digital Schooling System</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="dashboard" data-role="headteacher">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">DS</div>
+          <div>
+            <h1>Headteacher Profile</h1>
+            <p>Schedule, teacher, classroom, approval</p>
+          </div>
+        </div>
+        <nav class="role-nav" id="roleNav" aria-label="Headteacher sections"></nav>
+        <div class="data-panel">
+          <button id="logoutBtn" class="ghost-btn danger" type="button">Logout</button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="roleEyebrow">Headteacher</p>
+            <h2 id="dashboardTitle">Headteacher Dashboard</h2>
+          </div>
+          <div class="session-card" id="sessionCard">Loading profile</div>
+        </header>
+
+        <section class="hero-band">
+          <div>
+            <p class="eyebrow">School Management</p>
+            <h3 id="heroTitle">Headteacher dashboard</h3>
+            <p id="heroCopy">Manage teacher schedules, classrooms, students, attendance, and approvals.</p>
+          </div>
+          <div class="hero-stats" id="heroStats"></div>
+        </section>
+
+        <section class="notice" id="notice" hidden></section>
+        <section class="dashboard-grid" id="dashboard"></section>
+      </main>
+    </div>
+
+    <template id="cardTemplate">
+      <article class="panel-card">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow card-kicker"></p>
+            <h3 class="card-title"></h3>
+          </div>
+        </div>
+        <div class="card-body"></div>
+      </article>
+    </template>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

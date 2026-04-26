@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Digital Schooling System</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="login">
+    <main class="login-screen">
+      <section class="login-card" aria-labelledby="loginTitle">
+        <div class="brand login-brand">
+          <div class="brand-mark">DS</div>
+          <div>
+            <h1>Digital Schooling System</h1>
+            <p>Primary school management digital portal</p>
+          </div>
+        </div>
+
+        <div class="login-copy">
+          <p class="eyebrow">Profile Login</p>
+          <h2 id="loginTitle">Login to your school dashboard</h2>
+          <p>Select your role and profile. After login you will go to your own page.</p>
+        </div>
+
+        <form id="loginForm" class="login-panel">
+          <label for="roleSelect">Role</label>
+          <select id="roleSelect"></select>
+
+          <label for="userSelect">Profile</label>
+          <select id="userSelect"></select>
+
+          <label id="schoolSelectLabel" for="schoolSelect" hidden>School</label>
+          <select id="schoolSelect" hidden></select>
+
+          <button id="loginBtn" class="primary-btn" type="submit">Login</button>
+          <p id="loginStatus" class="form-message" aria-live="polite"></p>
+        </form>
+
+        <div class="demo-users">
+          <strong>Demo profiles</strong>
+          <span>Student: Ramiza</span>
+          <span>Teacher: Riza</span>
+          <span>Headteacher: Fahim</span>
+          <span>UPO: Admin</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
