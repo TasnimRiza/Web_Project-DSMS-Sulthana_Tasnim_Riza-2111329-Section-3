@@ -40,3 +40,24 @@ Login with a demo profile. The app will redirect automatically:
 - UPO profiles go to `upo.html`
 
 Opening `index.html` directly may block JSON loading in some browsers, so a local server is recommended.
+
+## Deploy to Vercel
+
+This project is a static site and does not need a build command.
+
+### Option 1: Vercel Dashboard
+
+1. Push this folder to GitHub.
+2. In Vercel, choose **Add New Project**.
+3. Import the GitHub repository.
+4. Keep the framework preset as **Other**.
+5. Leave **Build Command** empty.
+6. Leave **Output Directory** empty or set it to `.`.
+7. Deploy.
+
+### Option 2: Vercel CLI
+
+```powershell
+npx vercel
+npx vercel --prod
+```
